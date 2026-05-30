@@ -1,9 +1,0 @@
-Texto curto para usar na descricao do GitHub
-===========================================
-
-Case study tecnico do Sistema LJV: aplicacao web serverless para gestao comercial com PDV, estoque, financeiro, relatorios, usuarios, permissoes, auditoria e backup. Construido com TypeScript, Cloudflare Workers, Cloudflare D1, Hono e Zod.
-
-Texto para usar no About
-=======================
-
-Sistema comercial serverless com foco em operacao real, seguranca, auditoria, backup e controle de acesso. Repositorio publico com case study tecnico do projeto; codigo-fonte principal privado.

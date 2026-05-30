@@ -67,15 +67,13 @@ O projeto foi pensado para operacao real de loja: registrar vendas, controlar pr
 Uma versao organizada da estrutura tecnica esta disponivel em:
 
 - [docs/estrutura-do-projeto.md](docs/estrutura-do-projeto.md)
-- [assets/estrutura-projeto.txt](assets/estrutura-projeto.txt)
 
 ## Documentacao
 
 - [Arquitetura](docs/arquitetura.md)
 - [Funcionalidades](docs/funcionalidades.md)
 - [Seguranca e operacao](docs/seguranca-e-operacao.md)
-- [Como o sistema funciona](docs/como-funciona-o-sistema.txt)
-- [Resumo profissional](docs/resumo-profissional.txt)
+- [Como o sistema funciona](docs/como-funciona-o-sistema.md)
 
 ## Decisoes Tecnicas
 
