@@ -1,0 +1,6 @@
+# Arquivos locais que nao devem entrar no repositorio publico
+.DS_Store
+Thumbs.db
+*.tmp
+*.log
+

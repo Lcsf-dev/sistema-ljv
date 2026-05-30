@@ -1,0 +1,10 @@
+Sistema LJV - Resumo Profissional
+=================================
+
+O Sistema LJV e uma aplicacao web serverless para gestao comercial, criada para apoiar a rotina operacional de uma loja com vendas, estoque, financeiro, relatorios, usuarios, permissoes, auditoria e backup.
+
+O projeto foi construido com TypeScript, Cloudflare Workers e Cloudflare D1. A arquitetura usa um Worker para entregar o frontend e expor a API, reduzindo complexidade de deploy e centralizando a operacao em uma infraestrutura serverless.
+
+O sistema possui preocupacoes de producao, como hash de senha, sessoes com token, permissoes por modulo, auditoria de acoes sensiveis, migrations de banco, scripts de backup, restore, verificacao de seguranca e testes de API.
+
+Este repositorio publico apresenta o projeto como case study tecnico e visual. O codigo-fonte completo permanece privado para proteger regras de negocio e evitar a distribuicao de uma copia operacional do sistema.
