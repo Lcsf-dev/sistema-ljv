@@ -1,48 +1,23 @@
-# Seguranca e Operacao
+# 🔒 Segurança e operação
 
-## Seguranca Aplicada
+## Segurança aplicada
 
-- Senhas armazenadas com hash PBKDF2.
-- Comparacao de senha em tempo constante.
-- Tokens de sessao aleatorios.
-- Apenas hash do token salvo no banco.
-- Expiracao e renovacao de sessao.
-- Limpeza de sessoes expiradas.
-- Bloqueio temporario apos muitas falhas de login.
-- Rate limit por usuario e IP.
-- Permissoes por area do sistema.
-- Auditoria de eventos sensiveis.
-- Headers HTTP de seguranca.
-- Senha inicial fora da configuracao publica.
+O Sistema LJV adota proteções para autenticação, sessões, permissões e dados operacionais.
 
-## Auditoria
+- Senhas protegidas antes do armazenamento.
+- Sessões autenticadas e com expiração.
+- Controle de acesso por permissões.
+- Validação de dados no serviço da aplicação.
+- Proteções contra tentativas recorrentes de acesso indevido.
+- Auditoria de eventos relevantes.
+- Cabeçalhos de segurança para a aplicação web.
 
-O sistema registra acoes importantes para rastreabilidade:
+## Rastreabilidade
 
-- Login e logout.
-- Alteracao de configuracoes.
-- Cadastro e edicao de usuarios.
-- Vendas.
-- Gastos.
-- Movimentacoes de estoque.
-- Backup.
-- Reset do sistema.
+O sistema registra eventos relevantes, como acessos, alterações administrativas, vendas, gastos e movimentações de estoque. Isso apoia conferências operacionais e a investigação de alterações.
 
-## Automacao
+## Proteção do repositório público
 
-O projeto possui scripts para:
+O código-fonte operacional, credenciais, cópias de segurança, dados de clientes e configurações de produção permanecem fora deste repositório.
 
-- Build do frontend.
-- Typecheck.
-- Migrations locais e remotas.
-- Verificacao do banco.
-- Verificacao de seguranca.
-- Smoke test.
-- Testes de API.
-- Backup e restore.
-- Deploy.
-
-## Estrategia de Publicacao
-
-O codigo-fonte principal permanece privado. Este repositorio publico apresenta o projeto como case study tecnico, com imagens, arquitetura, estrutura e textos tecnicos suficientes para avaliacao sem expor uma copia operacional do sistema.
-
+Este case study apresenta somente informações técnicas de alto nível e imagens demonstrativas do produto.

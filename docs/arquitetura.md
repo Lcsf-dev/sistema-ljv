@@ -1,33 +1,30 @@
-# Arquitetura
+# 🧱 Arquitetura
 
-O Sistema LJV e uma aplicacao web serverless organizada em tres camadas principais: interface, API e banco de dados.
-
-## Fluxo Geral
+O Sistema LJV é uma aplicação web serverless organizada em três responsabilidades principais: interface, serviços de aplicação e persistência de dados.
 
 ```text
-Usuario no navegador
-  -> Cloudflare Worker entrega HTML, CSS e JavaScript
-  -> Frontend chama endpoints /api
-  -> Worker valida sessao, permissoes e dados
-  -> Worker consulta ou altera o Cloudflare D1
-  -> Frontend atualiza a interface com a resposta
+Pessoa usuária
+  → Interface web
+  → Serviços serverless
+  → Banco de dados
 ```
 
-## Frontend
+## Interface
 
-O frontend e escrito em TypeScript e compilado para JavaScript de browser. Ele controla login, navegacao entre telas, formularios, carrinho de venda, consultas, filtros, relatorios, backup pelo navegador e configuracoes visuais.
+A interface foi desenvolvida em TypeScript e reúne as áreas de vendas, estoque, financeiro, relatórios e administração. Ela oferece formulários, filtros, indicadores e tabelas voltados à operação diária.
 
-## Backend
+## Serviços de aplicação
 
-O backend roda em Cloudflare Workers. Ele concentra as rotas HTTP, valida entradas, aplica regras de negocio, verifica permissoes e registra auditoria das acoes importantes.
+Os serviços serverless processam autenticação, validação de dados, regras de negócio, permissões e auditoria. Essa separação mantém as regras sensíveis fora do navegador.
 
-## Banco de Dados
+## Dados
 
-O banco utilizado e Cloudflare D1, baseado em SQLite. O schema e controlado por migrations, permitindo evoluir a estrutura com rastreabilidade.
+Os dados operacionais são persistidos em banco SQLite serverless. A evolução da estrutura é controlada por versionamento, o que favorece rastreabilidade e manutenção.
 
-Os valores monetarios sao armazenados internamente em centavos para evitar erro de ponto flutuante.
+## Princípios adotados
 
-## Operacao
-
-O projeto possui scripts para build, typecheck, migrations, backup, restore, sincronizacao, testes de API, smoke test e verificacao de seguranca.
-
+- Segurança aplicada nas regras de negócio.
+- Validação de dados entre interface e serviços.
+- Separação entre apresentação, regras e dados.
+- Rastreabilidade de ações relevantes.
+- Evolução controlada da estrutura de dados.

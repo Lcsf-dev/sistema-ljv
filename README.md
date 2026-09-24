@@ -1,16 +1,16 @@
-# Sistema LJV
+# ✨ Sistema LJV
 
-Sistema web serverless para gestao comercial, desenvolvido para centralizar vendas, estoque, financeiro, relatorios, usuarios, permissoes, auditoria e backup em uma unica aplicacao.
+> Sistema web serverless para gestão comercial, reunindo vendas, estoque, financeiro, relatórios, usuários, permissões, auditoria e backup em uma única aplicação.
 
-Este repositorio e um **case study tecnico e visual** do projeto. O codigo-fonte principal permanece privado para proteger regras de negocio, estrutura operacional e propriedade intelectual do sistema.
+Este repositório é o **case study técnico e visual** do Sistema LJV. O código-fonte operacional permanece privado para preservar regras de negócio, dados operacionais e propriedade intelectual.
 
-## Visao Geral
+## 🎯 Visão geral
 
-O Sistema LJV foi desenvolvido como uma aplicacao web completa, com frontend em TypeScript e backend serverless em Cloudflare Workers. A persistencia utiliza Cloudflare D1, banco SQLite serverless, com schema versionado por migrations.
+O Sistema LJV foi desenvolvido para apoiar a rotina de uma loja, centralizando processos comerciais e administrativos em uma interface única, organizada e responsiva.
 
-O projeto foi pensado para operacao real de loja: registrar vendas, controlar produtos, acompanhar financeiro, consultar relatorios, gerenciar usuarios e manter rastreabilidade das acoes sensiveis.
+O produto utiliza TypeScript no frontend e uma arquitetura serverless baseada em Cloudflare Workers e Cloudflare D1. A estrutura de dados é versionada para permitir evolução com rastreabilidade.
 
-## Stack Tecnica
+## 🛠️ Tecnologias
 
 - TypeScript
 - Cloudflare Workers
@@ -22,67 +22,103 @@ O projeto foi pensado para operacao real de loja: registrar vendas, controlar pr
 - Esbuild
 - HTML e CSS
 
-## Principais Funcionalidades
+## 🚀 Funcionalidades
 
-- Login com sessao segura.
-- PDV para registro e consulta de vendas.
-- Cadastro de produtos, servicos, bancos e itens diversos.
-- Controle de estoque para produtos.
-- Relatorios de vendas, faturamento e itens mais vendidos.
-- Financeiro com gastos pessoais e gastos da loja.
-- Gestao de usuarios e permissoes por modulo.
-- Auditoria de acoes importantes.
-- Backup e restore em SQL.
-- Configuracoes visuais do sistema.
-- Ferramentas de apoio como radio online, calendario, clima e cotacoes.
+- 🔐 Login com sessão segura e controle de acesso.
+- 🛒 PDV para registrar, editar e consultar vendas.
+- 📦 Cadastro de produtos, serviços, bancos e itens diversos.
+- 📋 Controle de estoque, ajustes e histórico de movimentações.
+- 💰 Gestão financeira com receitas, gastos pessoais e gastos da loja.
+- 📊 Relatórios de faturamento, lucro, itens mais vendidos e comparativo anual.
+- 👥 Usuários, perfis e permissões por módulo.
+- 🧾 Auditoria de ações importantes.
+- 💾 Backup e restauração de dados.
+- 🎨 Personalização visual da loja.
+- 📻 Recursos de apoio, como rádio, calendário, clima e cotações.
 
-## Screenshots
+## 🖼️ Interface atual
 
-### Login
+### 🔐 Login
 
-![Tela de Login](screenshots/01-login.png)
+![Tela de login do Sistema LJV](screenshots/atual/01-login.png)
 
-### Vendas
+### 🛒 Vendas
 
-![Tela de Vendas](screenshots/02-vendas.png)
+![Tela de vendas do Sistema LJV](screenshots/atual/02-vendas.png)
 
-### Estoque
+### 📦 Estoque
 
-![Tela de Estoque](screenshots/03-estoque.png)
+![Tela de estoque do Sistema LJV](screenshots/atual/03-estoque.png)
 
-### Financeiro
+### 🧾 Histórico de estoque
 
-![Tela de Financeiro](screenshots/04-financeiro.png)
+![Tela de histórico de movimentações do Sistema LJV](screenshots/atual/04-historico-estoque.png)
 
-### Relatorios
+### 💰 Financeiro
 
-![Tela de Relatorios](screenshots/05-relatorios.png)
+![Tela financeira do Sistema LJV](screenshots/atual/05-financeiro.png)
 
-### Configuracoes do Sistema
+### 📊 Relatórios
 
-![Tela de Sistema](screenshots/06-sistema.png)
+![Tela de relatórios do Sistema LJV](screenshots/atual/06-relatorios.png)
 
-## Estrutura do Projeto
+### 📈 Comparativo financeiro anual
 
-Uma versao organizada da estrutura tecnica esta disponivel em:
+![Tela de comparativo financeiro anual do Sistema LJV](screenshots/atual/07-comparativo-financeiro.png)
 
-- [docs/estrutura-do-projeto.md](docs/estrutura-do-projeto.md)
+### ⚙️ Configurações, usuários e permissões
 
-## Documentacao
+![Tela de configurações do Sistema LJV](screenshots/atual/08-configuracoes.png)
+
+## 🕰️ Evolução visual
+
+As imagens abaixo preservam uma versão anterior da interface e demonstram a evolução contínua do produto.
+
+### Versão anterior — Login
+
+![Login da versão anterior](screenshots/evolucao/01-login.png)
+
+### Versão anterior — Vendas
+
+![Vendas da versão anterior](screenshots/evolucao/02-vendas.png)
+
+### Versão anterior — Estoque
+
+![Estoque da versão anterior](screenshots/evolucao/03-estoque.png)
+
+### Versão anterior — Financeiro
+
+![Financeiro da versão anterior](screenshots/evolucao/04-financeiro.png)
+
+### Versão anterior — Relatórios
+
+![Relatórios da versão anterior](screenshots/evolucao/05-relatorios.png)
+
+### Versão anterior — Sistema
+
+![Configurações da versão anterior](screenshots/evolucao/06-sistema.png)
+
+## 🧱 Decisões técnicas
+
+- Frontend e backend integrados para simplificar a operação e a publicação.
+- Camada serverless para entregar a interface e processar as regras do sistema.
+- Persistência baseada em banco de dados SQLite serverless.
+- Valores monetários tratados em centavos para evitar imprecisões de ponto flutuante.
+- Regras de sessão, permissões, estoque e auditoria aplicadas no backend.
+- Estrutura de dados versionada para facilitar a evolução do produto.
+
+## 🔒 Segurança e privacidade
+
+Este repositório não contém código operacional, credenciais, backups, banco de dados ou dados de clientes. As informações apresentadas servem exclusivamente para demonstrar o escopo, a arquitetura e a evolução visual do Sistema LJV.
+
+## 📚 Documentação
 
 - [Arquitetura](docs/arquitetura.md)
 - [Funcionalidades](docs/funcionalidades.md)
-- [Seguranca e operacao](docs/seguranca-e-operacao.md)
+- [Segurança e operação](docs/seguranca-e-operacao.md)
 - [Como o sistema funciona](docs/como-funciona-o-sistema.md)
+- [Estrutura pública do case study](docs/estrutura-do-projeto.md)
 
-## Decisoes Tecnicas
+## ℹ️ Sobre este repositório
 
-O sistema concentra frontend e backend no mesmo projeto para simplificar deploy e operacao. O Worker entrega os assets estaticos e tambem expoe os endpoints de API. O D1 armazena os dados operacionais e as migrations mantem a evolucao do banco versionada.
-
-As areas sensiveis do sistema contam com validacao, autenticacao, autorizacao por permissoes, auditoria, protecao de sessao e scripts de verificacao.
-
-## Observacao Sobre o Codigo-Fonte
-
-Este repositorio nao contem o codigo-fonte completo do produto. Ele foi preparado como case study tecnico no GitHub, com imagens, documentacao, descricao tecnica e estrutura do sistema.
-
-O objetivo e demonstrar arquitetura, escopo, decisoes tecnicas e maturidade de construcao sem disponibilizar uma copia operacional do sistema.
+O objetivo deste projeto público é demonstrar a arquitetura, o escopo funcional, as decisões técnicas e a evolução visual do Sistema LJV, sem disponibilizar uma cópia operacional do produto.

@@ -1,23 +1,19 @@
-Como o Sistema Funciona
-=======================
+# 💡 Como o Sistema LJV funciona
 
-1. O usuario acessa o sistema pelo navegador.
-2. O Cloudflare Worker entrega os arquivos estaticos da interface.
-3. O frontend em TypeScript faz chamadas para endpoints /api.
-4. O Worker valida autenticacao, permissao e dados recebidos.
-5. As operacoes sao executadas no Cloudflare D1.
-6. Acoes importantes sao registradas em auditoria.
-7. A interface atualiza as telas de vendas, estoque, financeiro, relatorios e configuracoes.
+1. A pessoa usuária acessa o sistema pela interface web.
+2. A aplicação valida a sessão e identifica as permissões disponíveis.
+3. As operações de vendas, estoque, financeiro ou administração são processadas pelos serviços do sistema.
+4. Os dados são armazenados de forma estruturada.
+5. A interface atualiza os indicadores, tabelas e relatórios.
+6. Ações relevantes ficam registradas para auditoria.
 
-O sistema foi pensado para ser simples de operar e facil de publicar. O mesmo projeto contem frontend, backend, migrations, scripts de verificacao, backup e deploy.
+## Áreas principais
 
-Areas principais:
+- **Vendas:** PDV, carrinho, consulta e edição.
+- **Estoque:** cadastro, saldo, ajustes e histórico de movimentações.
+- **Financeiro:** faturamento, gastos e resumos por período.
+- **Relatórios:** indicadores, itens mais vendidos e comparativo anual.
+- **Usuários:** perfis e permissões por área.
+- **Administração:** personalização, auditoria e backup.
 
-- Vendas: PDV, carrinho, consulta e edicao.
-- Estoque: produtos e movimentacoes.
-- Financeiro: gastos, faturamento e resumo mensal.
-- Relatorios: indicadores por periodo.
-- Usuarios: controle de acesso por permissoes.
-- Auditoria: rastreabilidade das acoes sensiveis.
-- Backup: exportacao e restauracao em SQL.
-
+O foco do Sistema LJV é oferecer uma operação mais clara, rastreável e centralizada para a gestão comercial.

@@ -1,6 +1,23 @@
-# Arquivos locais que nao devem entrar no repositorio publico
+# Arquivos do sistema
 .DS_Store
 Thumbs.db
 *.tmp
 *.log
 
+# Variáveis e credenciais
+.env
+.env.*
+!.env.example
+.dev.vars
+
+# Dados e cópias de segurança
+Backup/
+backups/
+*.sql
+*.sqlite
+*.sqlite3
+
+# Ferramentas e dependências locais
+node_modules/
+.wrangler/
+logs/
